@@ -1,0 +1,79 @@
+/* 
+    CSS Guide 
+
+    1. General Styles
+    2. Main Nav
+    3. Main Hero Image
+    4. 
+    5. 
+    6. Contact Us
+    7. Footer
+    8. Tablet Screen
+    9. Desktop Screen
+
+ */
+
+/* 1. General Styles */
+
+.hidden {
+    display: none;
+}
+
+body {
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Main Nav */
+
+header {
+    
+}
+
+
+/* 3. Main Hero Image */
+
+
+
+/* 4.  */
+
+
+/* 5.  */
+
+
+
+/* 6. Contact Us */
+
+
+
+/* 7. footer */
+
+footer {
+    
+}
+
+
+/* 8. Tablet Screen */
+
+@media screen and (min-width: 768px) {
+
+    
+}
+
+/* 9. Desktop Screen */
+
+@media screen and (min-width: 1920px) {
+    
+    
+}
+
