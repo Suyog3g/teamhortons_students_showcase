@@ -16,48 +16,25 @@ html {
   box-sizing: inherit; 
 }
 
-/* ---Mini CSS reset--- */
-
-body, p, h1, h2, h3, h4, h5 {
-   margin: 0px; 
-   padding: 0px;
-}
-
-/* ---Utility Classes--- */
-
-.hidden {
-   display: none;
-}
-
-.box {
-   background-color: powderblue;
-   color: rgb(27, 27, 27);
-   border-radius: 5px;
-   padding: 20px;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom:10px;
- }
-
 /* ---Mobile Library Grid Styles--- */
 
-/* Note if you are using a grid size of 1920, you need to change the value of 1200px to 1920px on line 50 and 57 */
+/* Note if you are using a grid size of 1920, you need to change the value of 1200px to 1920px on line 27 and 34 */
 
 .full-width-grid-con {
    /* set this container as a grid, with 3 columns
    the other grid will sit in the middle column, this allows for overlapping content */
    display: grid; 
-	grid-template-columns: 1fr minmax(0, 1920px) 1fr;  
+	grid-template-columns: 1fr minmax(0, 1280px) 1fr;  
 }
 
- .grid-con { 
+.grid-con { 
    display: grid;
    grid-template-columns: repeat(4, minmax(0, 1fr));
-   grid-column-gap: 16px;
-   max-width: 1920px;
+   grid-column-gap: 10px;
+   max-width: 1280px;
    margin: 0 auto;
-   padding-left: 33px;
-   padding-right: 33px;
+   padding-left: 36px;
+   padding-right: 36px;
 }
 
 /* A keyword indicating that the property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1. */
@@ -142,14 +119,14 @@ body, p, h1, h2, h3, h4, h5 {
 
 /* ---Desktop Library Grid Styles--- */
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1280px) { 
 
    .grid-con { 
       display: grid; 
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-column-gap: 16px;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left:138px;
+      padding-right: 138px;
    }
 
    .l-col-auto {grid-column: auto;}
