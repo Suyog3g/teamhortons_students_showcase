@@ -25,7 +25,6 @@ body {
 
 a {
   text-decoration: none;
-
 }
 
 input, textarea {
@@ -37,24 +36,34 @@ input, textarea {
 /* 2. Main Nav and Hero Image */
 
 
-#hero img {
+#hero picture {
     grid-column: 1/-1;
     grid-row: 1/1;
+    justify-self: center;
     margin: 0 auto;
 }
 
-#hero-main .grid-con {
-    grid-row: 1/9;
+#main-header {
+    grid-column: 1/-1;
+    grid-row: 1/1;
     z-index: 1;
+}
+
+#hero-main .grid-con {
+    grid-column: 1/-1;
+    grid-row: 1/9;
+}
+
+#main-logo {
+    margin-top: 20px;
 }
 
 #main-nav {
     text-align: right;
 }
 
-
 #main-nav button {
-    background: url(../images/hamburger.svg) no-repeat;
+    background: url(../images/hamburger-white.svg) no-repeat;
     border: 0;
     width: 25px;
     height: 30px;
@@ -62,6 +71,7 @@ input, textarea {
     margin-bottom: 20px;
     transition: all .5s ease;
     cursor: pointer;
+    z-index: 1;
 }
  
 #main-nav ul {
@@ -103,27 +113,28 @@ input, textarea {
 }
  
 #main-nav button.expanded {
-    background: url(../images/hamburger-white.svg) center no-repeat;
+    background: url(../images/hamburger.svg) center no-repeat;
     transform: rotate(90deg);
-    position: absolute;
+    position: relative;
     z-index: 3;
 }
 
 #hero-title-1 {
     grid-row: 3/4;
-    font-size: 400%;
+    font-size: 450%;
     text-align: right;
     font-weight: bold;
-    margin-top: 50%;
+    margin-top: 30%;
+    color: #ffffff;
 }
 
 #hero-title-2 {
     grid-row: 4/5;
-    font-size: 400%;
+    font-size: 500%;
     text-align: right;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
-    color: #ffffff;
+    -webkit-text-stroke: 2px #ffffff;
+    color: #000000;
 }
 
 #hero-title-3 {
@@ -132,6 +143,7 @@ input, textarea {
     font-weight: bold;
     margin-left: 60px;
     margin-top: 50%;
+    color: #ffffff;
 }
 
 #hero-title-4 {
@@ -148,6 +160,7 @@ input, textarea {
     font-size: 22px;
     font-weight: bold;
     margin-left: 60px;
+    color: #ffffff;
 }
 
 #hero-title-address {
@@ -155,6 +168,7 @@ input, textarea {
     margin-left: 60px;
     margin-top: 10%;
     font-size: 20px;
+    color: #ffffff;
 }
 
 #location {
@@ -163,13 +177,76 @@ input, textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 13px;
+    color: #ffffff;
 }
 
-/* 3. Main Hero Image */
+/* 3. Event Details */
 
+#intro-title-1 {
+    text-align: center;
+    margin-top: 25px;
+}
 
+#intro-title-2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
 
-/* 4.  */
+#about-event {
+    margin-top: 52px;
+}
+
+#about-event img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    width: 50%;
+}
+
+#event-details {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    z-index: 1;
+}
+
+#about-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+#about-details-1 {
+    margin-left: 40px;
+}
+
+#about-details-2 {
+    margin-left: 40px;
+}
+
+/* 4. Event Schedule */
+
+#event-schedule {
+    background-color: #ed202d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#schedule-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#event-schedule div p {
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
 /* 5.  */
