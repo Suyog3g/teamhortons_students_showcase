@@ -2,8 +2,8 @@
     CSS Guide 
 
     1. General Styles
-    2. Main Nav
-    3. Main Hero Image
+    2. Main Nav and Hero Image
+    3. Main 
     4. 
     5. 
     6. Contact Us
@@ -34,12 +34,136 @@ input, textarea {
     padding: 0;
 }
 
-/* 2. Main Nav */
+/* 2. Main Nav and Hero Image */
 
-header {
-    
+
+#hero img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    margin: 0 auto;
 }
 
+#hero-main .grid-con {
+    grid-row: 1/9;
+    z-index: 1;
+}
+
+#main-nav {
+    text-align: right;
+}
+
+
+#main-nav button {
+    background: url(../images/hamburger.svg) no-repeat;
+    border: 0;
+    width: 25px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+ 
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+}
+ 
+#main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+ 
+#main-nav ul li a:hover {
+    color: #517d59;
+}
+ 
+#main-nav ul li {
+    margin-bottom: 20px;
+}
+
+#burger-con {
+    display: none;
+}
+ 
+#burger-con.slide-toggle {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: #626262;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+ 
+#main-nav button.expanded {
+    background: url(../images/hamburger-white.svg) center no-repeat;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 3;
+}
+
+#hero-title-1 {
+    grid-row: 3/4;
+    font-size: 400%;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 50%;
+}
+
+#hero-title-2 {
+    grid-row: 4/5;
+    font-size: 400%;
+    text-align: right;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+    color: #ffffff;
+}
+
+#hero-title-3 {
+    grid-row: 5/6;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 50%;
+}
+
+#hero-title-4 {
+    grid-row: 5/7;
+    font-size: 66px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+    color: #ffffff;
+    margin-top: 100%;
+}
+
+#hero-title-5 {
+    grid-row: 6/7;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+#hero-title-address {
+    grid-row: 7/8;
+    margin-left: 60px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+#location {
+    grid-row: 8/9;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
 
 /* 3. Main Hero Image */
 
