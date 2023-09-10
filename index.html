@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <h1 class="hidden">Student Showcases for Industry Night</h1>
     <div id="hero" class="full-width-grid-con">
         <picture id="hero-main">
-            <source srcset="images/heroImg.png" media="(min-width: 768px)">
+            <source srcset="images/heroImg.png" alt="desktop and tablet" media="(min-width: 768px)">
             <img src="images/heroImg-mobile.png" alt="mobile">
         </picture>
         <header class="grid-con" id="main-header">
@@ -36,9 +36,9 @@
             <nav class="navbar col-start-4 col-end-5 l-col-start-6 l-col-end-13">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
                     <li><a href="project.html">Projects</a></li>
-                    <li><a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next?gclid=CjwKCAjwr_CnBhA0EiwAci5siuy3vfWcHusORdeS3593i2Wr2d_EceGe2NrQPkERGrAJrA0c3DyReRoCIsQQAvD_BwE">Learn more</a></li>
-
+                    <li><a href="#">Learn more</a></li>
                 </ul>
             </nav>
             <div id="nav-icon1">
@@ -77,14 +77,14 @@
             <h2 class="hidden">Industry Night Event Intro</h2>
             <p id="intro-title-1" class="col-span-full">Join us in our event to</p>
             <p id="intro-title-2" class="col-span-full">DISCOVER, NETWORK, ELEVATE</p>
-            <div class="col-span-full container" id="promotion-movie">
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/dPSO8Oicd4E?si=3N_LvWpeLPQpn1SF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col-span-full" id="promotion-movie">
+                <iframe src="https://www.youtube.com/embed/NY24ORFWtCc?controls=0&amp;start=7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <article class="full-width-grid-con" id="about-event">           
             <img src="images/North-Star.jpg" alt="background image">
             <div class="grid-con" id="event-details">
-                <h2 class="col-span-full l-col-start-3 l-col-end-13" id="about-title">About Event</h2>
+                <h2 class="col-span-full l-col-start-3 l-col-end-13" id="about-title">About Event</h3>
                 <p class="col-span-full l-col-start-3 l-col-end-13" id="about-details-1">The SDPA Industry Night for 2023 will 
                 showcase student projects and activities 
                 from the Interactive Media Design Program.</p>
@@ -131,7 +131,6 @@
         </section>
 
         <section class="full-width-grid-con" id="client-p-l4">
-            <h2 class="hidden">Client Project lvl 4</h2>
             <img src="images/" alt="Photo for level4 description">
             <div class="grid-con" id="client-p-l4-details">
                 <p id="client-p-l4-title" class="col-start-2 col-end-5 l-col-start-7 l-col-end-13">
@@ -156,23 +155,50 @@
         </section>
 
         <section class="testimonies">
-            <h2 class="hidden">testimoies</h2>
+            <h2 class="hidden">Testimonials</h2>
             <div class="grid-con">
                 <article class="col-span-full">
-                <h3 class="hidden">Client Testimonial</h3>               
-                <p id="testimoies">
-                    <span>"</span> I’ve been consistently impressed by the students’ work. Their attention to detail and commitment to excellence shine through in every project. It’s a pleasure to collaborate with such promising talent. <span>"</span>
-                </p>
-                <p id="testimoies-from">
-                    - Alex Johnson, Satisfied Client
-                </p>
+                    <div id="testimonials-carousel">
+                        <div class="testimonial">
+                            <p>
+                                <span>"</span> I’ve been consistently impressed by the students’ work. Their attention to detail and commitment to excellence shine through in every project. It’s a pleasure to collaborate with such promising talent. <span>"</span>
+                            </p>
+                            <p class="testimonial-from">
+                                - Alex Johnson, Satisfied Client
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <p>
+                                <span>"</span> The students' creativity and dedication to their projects are outstanding. Working with them has been a fantastic experience, and I look forward to more collaborations in the future. <span>"</span>
+                            </p>
+                            <p class="testimonial-from">
+                                - Emily Davis, Partner
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <p>
+                                <span>"</span> Exceptional talent and professionalism! The students have delivered top-notch work consistently. I highly recommend them to anyone looking for creative solutions. <span>"</span>
+                            </p>
+                            <p class="testimonial-from">
+                                - John Smith, CEO
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="button-container col-span-full">
+                        <button id="prev-button" class="button">
+                            <i class="fas fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
+                        </button>
+                        <button id="next-button" class="button">
+                            <i class="fas fa-arrow-right"></i> <!-- Font Awesome right arrow icon -->
+                        </button>
+                    </div>
                 </article>
-                <!-- <div class="button-container col-span-full">
-                    <button data-member="1" class="button">Next</button>
-                </div> -->
+               
+                
             </div>
         </section>
         
+
         <section class="portfolios">
             <h2 id="portflios-title">Student Portfolios.</h2>
             <p id="portfolios-click">Click to see each students portfolios</p>
