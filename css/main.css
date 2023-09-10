@@ -503,6 +503,7 @@ input, textarea {
     grid-column: 1/-1;
     grid-row: 1/1;
     margin-top: 30px;
+    width: 50%;
 }
 
 #client-p-l4-details {
@@ -528,7 +529,7 @@ input, textarea {
     grid-row: 1/1;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 60px;
+
 }
 
 #idp-details {
@@ -894,6 +895,7 @@ footer {
         grid-row: 1/1;
         width: 30%;
     }
+    
 
     #event-details {
         grid-column: 1/-1;
