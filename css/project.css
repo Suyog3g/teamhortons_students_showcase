@@ -303,8 +303,50 @@ button {
         line-height: 30px
     }
 
+
+
+    footer {
+        background-color: #333; /* Background color for the footer */
+        padding: 30px; /* Add padding for spacing */
+        justify-content: space-between;
+        align-items: center;
+        /* Remove position and bottom properties */
+        width: 1280px;
+        margin: 0 auto;
+        height: 200px;
+    }
+
+    /* The rest of the CSS remains the same */
+    .footer-logo img {
+        max-width: 100px; /* Adjust the max-width as needed */
+        height: 80px;
+    }
+
+    .footer-txt p {
+        margin-top: 10px;
+        font-size: 15px;
+        color: white;
+    }
+
+
+    .social-icons a {
+        margin-right: 20px; /* Adjust the spacing between icons */
+        text-decoration: none;
+        margin: 18px;
+    }
+
+    .social-icons img {
+        max-width: 35px; /* Adjust the icon size as needed */
+        height: auto;
+        color: white;
+    }
+
+
+
+
     .text-desktop {
         display: inherit;
     }
+
 
 }
