@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -155,21 +155,49 @@
         </section>
 
         <section class="testimonies">
-            <h2 class="hidden">testimoies</h2>
+            <h2 class="hidden">Testimonials</h2>
             <div class="grid-con">
-                <article class="col-span-full">               
-                <p id="testimoies">
-                    <span>"</span> I’ve been consistently impressed by the students’ work. Their attention to detail and commitment to excellence shine through in every project. It’s a pleasure to collaborate with such promising talent. <span>"</span>
-                </p>
-                <p id="testimoies-from">
-                    - Alex Johnson, Satisfied Client
-                </p>
+                <article class="col-span-full">
+                    <div id="testimonials-carousel">
+                        <div class="testimonial">
+                            <p>
+                                <span>"</span> I’ve been consistently impressed by the students’ work. Their attention to detail and commitment to excellence shine through in every project. It’s a pleasure to collaborate with such promising talent. <span>"</span>
+                            </p>
+                            <p class="testimonial-from">
+                                - Alex Johnson, Satisfied Client
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <p>
+                                <span>"</span> The students' creativity and dedication to their projects are outstanding. Working with them has been a fantastic experience, and I look forward to more collaborations in the future. <span>"</span>
+                            </p>
+                            <p class="testimonial-from">
+                                - Emily Davis, Partner
+                            </p>
+                        </div>
+                        <div class="testimonial">
+                            <p>
+                                <span>"</span> Exceptional talent and professionalism! The students have delivered top-notch work consistently. I highly recommend them to anyone looking for creative solutions. <span>"</span>
+                            </p>
+                            <p class="testimonial-from">
+                                - John Smith, CEO
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="button-container col-span-full">
+                        <button id="prev-button" class="button">
+                            <i class="fas fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
+                        </button>
+                        <button id="next-button" class="button">
+                            <i class="fas fa-arrow-right"></i> <!-- Font Awesome right arrow icon -->
+                        </button>
+                    </div>
                 </article>
-                <!-- <div class="button-container col-span-full">
-                    <button data-member="1" class="button">Next</button>
-                </div> -->
+               
+                
             </div>
         </section>
+        
 
         <section class="portfolios">
             <h2 id="portflios-title">Student Portfolios.</h2>

@@ -202,5 +202,45 @@ popupClose.addEventListener('click', (e) => {
     portfolioContent.textContent = '';
 });
 
+const testimonials = document.querySelectorAll('.testimonial');
+const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+
+let currentIndex = 0;
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        if (i === index) {
+            testimonial.style.display = 'block';
+        } else {
+            testimonial.style.display = 'none';
+        }
+    });
+}
+
+function nextTestimonial() {
+    currentIndex++;
+    if (currentIndex >= testimonials.length) {
+        currentIndex = 0;
+    }
+    showTestimonial(currentIndex);
+}
+
+function prevTestimonial() {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = testimonials.length - 1;
+    }
+    showTestimonial(currentIndex);
+}
+
+// Show the initial testimonial
+showTestimonial(currentIndex);
+
+// Add event listeners for next and previous buttons
+nextButton.addEventListener('click', nextTestimonial);
+prevButton.addEventListener('click', prevTestimonial);
+
+
 
         
