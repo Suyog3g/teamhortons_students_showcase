@@ -177,6 +177,7 @@ header {
 
 .heading h1 {
     margin: 0;
+    padding: 20px;
 }
 
 
@@ -189,6 +190,15 @@ header {
 .title-1 .title-container {
     max-width: 1280px; /* Set the maximum width for the title container */
     margin: 0 auto; /* Center the title horizontally */
+}
+
+.image-hover-effect {
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+/* Apply the hover effect */
+.image-hover-effect:hover {
+    transform: scale(1.1); /* Increase the size by 10% when hovered */
 }
 
 .des-1 {
@@ -211,10 +221,49 @@ button {
     width: 200px;
     height: 60px;
     font-size: 20px;
+    margin-bottom: 80px;
 }
 
 .container {
     text-align: center;
+   
+}
+
+footer {
+    background-color: #333;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 200px;
+}
+
+
+.footer-logo img {
+    max-width: 100px; 
+    height: 50px;
+}
+
+.footer-txt p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+
+.social-icons {
+    margin-left: 50px;
+}
+
+.social-icons a {
+    margin-right: 10px; 
+    text-decoration: none;
+}
+
+.social-icons img {
+    max-width: 25px; 
+    height: auto;
+    color: white;
    
 }
 
@@ -315,5 +364,45 @@ button {
         font-size: 20px;
         line-height: 30px
     }
+
+
+footer {
+    background-color: #333; /* Background color for the footer */
+    padding: 30px; /* Add padding for spacing */
+    justify-content: space-between;
+    align-items: center;
+    /* Remove position and bottom properties */
+    width: 1280px;
+    margin: 0 auto;
+    height: 200px;
+}
+
+/* The rest of the CSS remains the same */
+.footer-logo img {
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: 80px;
+}
+
+.footer-txt p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+
+.social-icons a {
+    margin-right: 20px; /* Adjust the spacing between icons */
+    text-decoration: none;
+    margin: 18px;
+}
+
+.social-icons img {
+    max-width: 35px; /* Adjust the icon size as needed */
+    height: auto;
+    color: white;
+}
+
+
+
 
 }
