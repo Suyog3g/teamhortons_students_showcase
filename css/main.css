@@ -3,9 +3,7 @@
 
     1. General Styles
     2. Main Nav and Hero Image
-    3. Main 
-    4. 
-    5. 
+    3. Main
     6. Contact Us
     7. Footer
     8. Tablet Screen
@@ -33,6 +31,7 @@ input, textarea {
     padding: 0;
 }
 
+
 .container {
     position: relative;
     overflow: hidden;
@@ -54,6 +53,8 @@ input, textarea {
 
 
 
+/* 2. Main Nav and Hero Image */
+
 #hero picture {
     grid-column: 1/-1;
     grid-row: 1/1;
@@ -72,11 +73,15 @@ input, textarea {
     grid-row: 1/9;
 }
 
-/* Suyog */
+
+
+
 
 #logo-mobile {
     margin-top: 30px;
 }
+
+
 
 #logo-desktop {
     display: none;
@@ -223,7 +228,9 @@ input, textarea {
     transform: rotate(-135deg);
 }
 
-/* jon */
+
+
+
 
  #main-logo {
     margin-top: 20px;
@@ -411,6 +418,8 @@ input, textarea {
     color: #ffffff;
 }
 
+
+
 /* 3. Event Details */
 
 #intro-title-1 {
@@ -457,6 +466,9 @@ input, textarea {
     margin-left: 40px;
 }
 
+
+
+
 /* 4. Event Schedule */
 
 #event-schedule {
@@ -483,11 +495,14 @@ input, textarea {
 }
 
 
+
+
 /* 5. Client project Level 4 */
 
 #client-p-l4 img {
     grid-column: 1/-1;
     grid-row: 1/1;
+    margin-top: 30px;
 }
 
 #client-p-l4-details {
@@ -500,8 +515,11 @@ input, textarea {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px ;
-    margin-top: 50px;
+    margin-top: 60px;
 }
+
+
+
 
 /* 6. IDP */
 
@@ -911,11 +929,23 @@ footer {
         padding-bottom: 40px;
     }
 
+
+
+
+
+    #client-p-l4 img {
+       width: 30%;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
     #client-p-l4-title {
         font-size: 40px;
         font-weight: bold;
         margin-bottom: 15px ;
     }
+
+
 
     #idp img {
         margin-left: 800px;
