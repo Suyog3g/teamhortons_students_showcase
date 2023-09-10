@@ -208,7 +208,7 @@ input, textarea {
 
 /* jon */
 
-/* #main-logo {
+ #main-logo {
     margin-top: 20px;
 }
 
@@ -563,6 +563,85 @@ input, textarea {
     margin-bottom: 40px;
 }
 
+#student-names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 20px;
+  }
+  
+  #student-names div {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #student-names div:hover {
+    background-color: #ddd;
+  }
+  
+  #popup {
+    display: none;
+    position: fixed;
+    background-color: black;
+    color: white;
+    height: 20%; /* Adjust the height as needed */
+    width: 80%; /* You can also adjust the width if necessary */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -10%);
+}
+
+  
+  #popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+  #portfolio-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+#portfolio-link:hover {
+    background-color: #0056b3;
+}
+
+#portfolio-content {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#popup-close {
+    /* Your existing styles here */
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
 /* 7. footer */
 
 footer {
@@ -813,6 +892,21 @@ footer {
 
     #portfolios-click {
         font-size: 22px;
+    }
+
+    #popup {
+        display: none;
+        position: fixed;
+        background-color: black;
+        color: white;
+        height: 2%; /* Adjust the height as needed */
+        width: 60%; /* You can also adjust the width if necessary */
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        top: 50%;
+        left: 50%;
+        transform: translate(-32%, -10%);
     }
 
     footer {
