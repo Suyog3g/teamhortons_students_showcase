@@ -90,7 +90,7 @@ input, textarea {
 }
  
 #main-nav ul li a:hover {
-    color: #517d59;
+    color: #ed202d;
 }
  
 #main-nav ul li {
@@ -113,7 +113,7 @@ input, textarea {
 }
  
 #main-nav button.expanded {
-    background: url(../images/hamburger.svg) center no-repeat;
+    background: url(../images/hamburger-white.svg) center no-repeat;
     transform: rotate(90deg);
     position: relative;
     z-index: 3;
@@ -121,20 +121,22 @@ input, textarea {
 
 #hero-title-1 {
     grid-row: 3/4;
-    font-size: 450%;
+    font-size: 60px;
     text-align: right;
     font-weight: bold;
     margin-top: 30%;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #hero-title-2 {
     grid-row: 4/5;
-    font-size: 500%;
+    font-size: 61px;
     text-align: right;
     font-weight: bold;
     -webkit-text-stroke: 2px #ffffff;
     color: #000000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #hero-title-3 {
@@ -150,8 +152,8 @@ input, textarea {
     grid-row: 5/7;
     font-size: 66px;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
-    color: #ffffff;
+    -webkit-text-stroke: 2px #ffffff;
+    color: #000000;
     margin-top: 100%;
 }
 
@@ -214,6 +216,7 @@ input, textarea {
 #about-title {
     font-size: 30px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 40px;
 }
 
@@ -235,11 +238,13 @@ input, textarea {
 
 #schedule-title {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 20px;
+    margin-left: 80px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #event-schedule div p {
